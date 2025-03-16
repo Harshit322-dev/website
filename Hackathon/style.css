@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.lander{
+    height: 146vh;
+    width: 100%;
+    background-image: url('main-img.jpeg');
+    background-size: cover;
+    object-fit:contain;
+}
+
+.nav{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 3.5vw;
+}
+
+.nav .navSec1{
+    display: flex;
+    align-items: center;
+    gap: 8vw;
+}
+
+.nav .navSec1 .navOptions{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav .navSec1 .navOptions h4{
+    font-weight: 300;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 0.9vw;
+}
+
+.nav .navSec1 .navOptions h4:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.nav .navSec1 .logo img{
+    width: 70px;
+}
+
+.nav .navSec2 button{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 16px 30px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.nav .navSec2 button h4{
+    font-weight: 300;
+}
+
+.nav .navSec2 button h4,i{
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+.nav .navSec2 button h4:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+}
+
+.nav .navSec2 button i:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.contentLander{
+    max-height: calc(146vh - 130px);
+    margin-left: 21vw;
+}
+
+.contentLander .contetMain{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: flex-start;
+    margin-top: 10vw;
+    width: 30vw;
+    margin-bottom: 9vw;
+}
+
+.contentLander .contetMain h1{
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.contentLander .contetMain h1 span{
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.contentLander .contetMain h2{
+    font-size: 2vw;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.contentLander .contetMain h2 span{
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.contentLander .contetMain h2 span:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.contentLander button{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 16px 22px;
+    background-color: #1735EB;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contentLander button h4{
+    font-weight: 300;
+}
+
+.contentLander button h4,i{
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+.contentLander button h4:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+}
+
+.contentLander button i:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.contentFooter{
+    display: flex;
+    gap: 2vw;
+}
+
+.contentFooter h4{
+    font-size: 0.75vw;
+    font-weight: 300;
+    cursor: pointer;
+    opacity: 0.6;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+}
+
+.contentFooter h4:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.aboutMe{
+    margin-top: 2vw;
+    display: flex;
+    gap: 5vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe .imgMe img{
+    width: 18vw;
+    height: 38vh;
+}
+
+.aboutMe .contentMe{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe .contentMe h1{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #1735EB;
+    margin-bottom: 1.5vw;
+}
+
+.aboutMe .contentMe p{
+    font-size: 0.89vw;
+    margin-bottom: 1.2vw;
+    line-height: 2vw;
+    opacity: 0.7;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 7vw;
+}
+
+.serviceContent{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.services h1{
+    font-weight: 300;
+    color: #1735EB;
+}
+
+.serviceContent img{
+    width: 33.87vw;
+}
+
+.serviceContent .content{
+    width: 27.88vw;
+}
+
+.serviceContent .content h2{
+    font-weight: 500;
+    font-size: 1.6vw;
+    margin-bottom: 0.6vw;
+}
+
+.serviceContent .content p{
+    opacity: 0.7;
+    margin-bottom: 2.5vw;
+    font-size: 0.8vw;
+    line-height: 1.4vw;
+}
+
+.serviceContent .content button{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 16px 22px;
+    background-color: #1735EB;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.serviceContent .content button h4{
+    font-weight: 300;
+}
+
+.serviceContent .content button h4,i{
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+.serviceContent .content button h4:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+}
+
+.serviceContent .content button i:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.building{
+    margin-top: 10vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 110vh;
+}
+
+.building .buildingBlocks{
+    width: 50%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.3vw;
+}
+
+.building .buildingBlocks h2{
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+
+.building .buildingBlocks p{
+    font-size: 0.70vw;
+    opacity: 0.7;
+}
+
+.building .buildingBlocks button{
+    display: flex;
+    background: none;
+    border: none;
+    gap: 1vw;
+    align-items: center;
+    font-size: 1.1vw;
+    letter-spacing: 0.1vw;
+    margin-top: 2.5vw;
+    cursor: pointer;
+}
+
+.buttonW{
+    color: #fff;
+}
+
+.buttonB{
+    color: #1735EB;
+}
+
+.bg1{
+    background-color: #3757E0;
+    color: #fff;
+}
+
+.bg2{
+    background-color: #F7F8FD;
+    color: #000;
+}
+
+.bg3{
+    background-color: #F7F8FD;
+    color: #000;
+}
+
+.bg4{
+    background-color: #25282F;
+    color: #fff;
+}
+
+.paddingL{
+    padding-left: 20vw;
+    padding-right: 7vw;
+}
+
+.paddingR{
+    padding-right: 20vw;
+    padding-left: 7vw;
+}
+
+.openSource{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7vw;
+}
+
+.openSource h1{
+    font-weight: 300;
+    color: #1735EB;
+}
+
+.sourceBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 3.5vw;
+}
+
+
+.sourceBox .box{
+    max-width: 21vw;
+    min-height: 27vh;
+    display: flex;
+    padding: 2vw 2vw 2vw 1vw;
+    gap: 1.5vw;
+    align-items: flex-start;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px 1px  rgba(128, 128, 128,0.5);
+}
+
+
+.box .leftIcon i{
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+.box .rightContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.box .rightContent h4{
+    font-size: 1.59vw;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.box .rightContent  p{
+    font-size: 0.89vw;
+    opacity: 0.7;
+}
+
+.spanContainer{
+    display: flex;
+    gap: 2.5vw;
+}
+
+.spanContainer span{
+    font-weight: 700;
+}
+
+.control{
+    display: flex;
+    gap: 1.5vw;
+}
+
+.prev,.mid,.next{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1735EB;
+    cursor: pointer;
+}
+
+.application{
+    margin-top: 10vw;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17vw;
+}
+
+.application .button button{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 16px 22px;
+    background-color: #1735EB;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.application .button button h4{
+    font-weight: 300;
+}
+
+.application .button button h4,i{
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+.application .button button h4:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+}
+
+.application .button button i:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.application .content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vw;
+}
+
+.application .content h2{
+    font-weight: 300;
+    font-size: 1.35vw;
+    color: #1735EB;
+}
+
+.application .content p{
+    opacity: 0.7;
+    font-size: 0.99vw;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    margin-top: 10vw;
+    justify-content: space-between;
+    padding: 0vw 17vw 7.23vw 17vw;
+    align-items: center;
+    margin-bottom: 10vw;
+}
+
+.footer .leftFooter{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.footer .leftFooter img{
+    width: 70px;
+}
+
+.footer .leftFooter div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.43vw;
+}
+
+.footer .leftFooter div h5{
+    font-size: 0.83vw;
+    font-weight: 500;
+}
+
+.footer .leftFooter div p{
+    font-size: 0.6vw;
+    opacity: 0.6;
+}
+
+.footer .rightFooter{
+    display: flex;
+    gap: 2.3vw;
+}
+
+.footer .rightFooter h4{
+    font-size: 0.85vw;
+    font-weight: 300;
+    cursor: pointer;
+    opacity: 0.6;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+}
+
+
+.rightFooter h4:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.box:hover{
+    background-color: rgb(94, 95, 95);
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+.rightContent:hover{
+    color: white;
+}
